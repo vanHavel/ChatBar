@@ -1,5 +1,5 @@
 # ChatBar
-Display Twitch Chat in MacBook Pro Touchbar.
+Display Twitch Chat in MacBook Pro Touchbar. This way you can watch a stream in fullscreen mode and still follow the chat.
 
 # Usage
 1. Generate an oauth token for chat login using the [TwitchChat oauth Password Generator](https://twitchapps.com/tmi/)
