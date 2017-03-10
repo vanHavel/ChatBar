@@ -4,7 +4,7 @@ Display Twitch Chat in MacBook Pro Touchbar. This way you can watch a stream in 
 ![demo image](https://github.com/vanHavel/ChatBar/blob/master/demo_image.jpg)
 
 # Installation
-I currently don't provide a bundled app for this project. Your only way to run it is to build it yourself using XCode(If you have no idea how to achieve this, it's probably not worth learning it for the purpose of this gimmick alone).
+Download the ChatBar.app file, put it in your Applications folder, and run it. On first start, you probably have to do a right click & open, since the app is not signed.
 
 # Usage
 1. Generate an oauth token for chat login using the [TwitchChat oauth Password Generator](https://twitchapps.com/tmi/)
@@ -14,5 +14,4 @@ I currently don't provide a bundled app for this project. Your only way to run i
 # General Info
 - Adding the chat icon to the control strip is handled by calls to a private, undocumented API(see [TouchBaer](https://github.com/a2/touch-baer)). The functionality might be removed in a future release of Apple's frameworks or (hopefully) make it's way into a public API.
 - The application simulates a keypress of the shift key regularly to disable the touchbar sleep function.
-- Connection is secured using SSL, and certificates are verified by SSL pinning. This is handled by the [Starscream](https://github.com/daltoniam/Starscream) framework. However, I am no network security expert and can not vouch for the correctness of my or their implementation from a security standpoint.
-
+- Connection is secured using SSL, and certificates are verified by SSL pinning. This is handled by the [Starscream](https://github.com/daltoniam/Starscream) framework. However, the documentation of this feature was a bit lacking, so use at your own risk.
