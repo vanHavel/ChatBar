@@ -1,7 +1,7 @@
 # ChatBar
-![demo image](https://github.com/vanHavel/ChatBar/blob/master/demo_image.jpg)
-
 Display Twitch Chat in MacBook Pro Touchbar. This way you can watch a stream in fullscreen mode and still follow the chat.
+
+![demo image](https://github.com/vanHavel/ChatBar/blob/master/demo_image.jpg)
 
 # Installation
 I currently don't provide a bundled app for this project. Your only way to run it is to build it yourself using XCode(If you have no idea how to achieve this, it's probably not worth learning it for the purpose of this gimmick alone).
