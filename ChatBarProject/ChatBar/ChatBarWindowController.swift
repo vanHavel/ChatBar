@@ -71,9 +71,9 @@ class ChatBarWindowController: NSWindowController {
     func chatPressed() {
         // get field content from view
         let vc = self.contentViewController as! ViewController
-        let username = vc.chatUser.stringValue
+        let username = vc.chatUser.stringValue.lowercased()
         let pw = vc.chatPw.stringValue
-        let channel = vc.chatChannel.stringValue
+        let channel = vc.chatChannel.stringValue.lowercased()
         // start chat connection and open special touchbar
         startChat(username: username, pw: pw, channel: channel)
         NSTouchBar.presentSystemModalFunctionBar(chatBar, systemTrayItemIdentifier: "strip")
