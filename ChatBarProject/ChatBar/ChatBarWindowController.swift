@@ -46,8 +46,17 @@ class ChatBarWindowController: NSWindowController {
     
     // update touchbar content
     func updateBar(msg: ChatMessage) {
+        //simulate button press of shift key to wake up touchbar
+        let source = CGEventSource(stateID: CGEventSourceStateID.hidSystemState)
+        let keyDown = CGEvent(keyboardEventSource: source, virtualKey: 0x38, keyDown: true)
+        let keyUp = CGEvent(keyboardEventSource: source, virtualKey: 0x38, keyDown: false)
+        let location = CGEventTapLocation.cghidEventTap
+        keyDown!.post(tap: location)
+        keyUp!.post(tap: location)
+        // get username color
         chatUser.textColor = ChatMessage.nameColor(username: msg.user)
         chatMessage.textColor = NSColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
+        // update touchbar
         chatUser.stringValue = msg.user
         chatMessage.stringValue = msg.content
     }
