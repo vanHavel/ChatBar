@@ -8,7 +8,7 @@ Download the ChatBar.app file, put it in your Applications folder, and run it. O
 
 # Usage
 1. Generate an oauth token for chat login using the [TwitchChat oauth Password Generator](https://twitchapps.com/tmi/)
-2. Start the program and enter your Twitch username, oauth token, and channel you want to join.
+2. Start the program and enter your Twitch username, oauth token, and channel you want to join (You can paste the oauth token by right click + paste).
 3. When you are ready, press the chat icon (speech bubble) in the control strip of your touchbar
 
 # General Info
