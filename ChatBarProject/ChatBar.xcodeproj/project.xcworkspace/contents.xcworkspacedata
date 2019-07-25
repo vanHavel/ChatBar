@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../../../../Downloads/Starscream-3.1.0/Starscream.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

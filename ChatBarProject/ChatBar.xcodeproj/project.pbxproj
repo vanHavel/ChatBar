@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56330A9322E90DB9006E914F /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56330A9222E90DB9006E914F /* Starscream.framework */; };
 		5678BF861E70223400B3121C /* touchHack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5678BF851E70223400B3121C /* touchHack.m */; };
 		568A67CD1E70A79800F52BD6 /* tw2d.cer in Resources */ = {isa = PBXBuildFile; fileRef = 568A67CB1E70A79800F52BD6 /* tw2d.cer */; };
 		568A67CF1E70BF1600F52BD6 /* Ackknowledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 568A67CE1E70BF1600F52BD6 /* Ackknowledgements.rtf */; };
 		568A67D21E70C86700F52BD6 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568A67D11E70C86700F52BD6 /* DFRFoundation.framework */; };
+		56BC878D22EA674200A90F2C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC878C22EA674200A90F2C /* Starscream.framework */; };
 		56DDAB661E6F1F71000513ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DDAB651E6F1F71000513ED /* AppDelegate.swift */; };
 		56DDAB681E6F1F71000513ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DDAB671E6F1F71000513ED /* ViewController.swift */; };
 		56DDAB6A1E6F1F71000513ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DDAB691E6F1F71000513ED /* Assets.xcassets */; };
@@ -35,13 +35,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		56330A9222E90DB9006E914F /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5678BF841E70223300B3121C /* ChatBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatBar-Bridging-Header.h"; sourceTree = "<group>"; };
 		5678BF851E70223400B3121C /* touchHack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchHack.m; sourceTree = "<group>"; };
 		5678BF871E7022E500B3121C /* touchHack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = touchHack.h; sourceTree = "<group>"; };
 		568A67CB1E70A79800F52BD6 /* tw2d.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = tw2d.cer; path = ChatBar/tw2d.cer; sourceTree = "<group>"; };
 		568A67CE1E70BF1600F52BD6 /* Ackknowledgements.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ackknowledgements.rtf; sourceTree = "<group>"; };
 		568A67D11E70C86700F52BD6 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+		56BC878C22EA674200A90F2C /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DDAB621E6F1F71000513ED /* ChatBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DDAB651E6F1F71000513ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DDAB671E6F1F71000513ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56330A9322E90DB9006E914F /* Starscream.framework in Frameworks */,
+				56BC878D22EA674200A90F2C /* Starscream.framework in Frameworks */,
 				568A67D21E70C86700F52BD6 /* DFRFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +69,7 @@
 		568A67D01E70C86700F52BD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				56330A9222E90DB9006E914F /* Starscream.framework */,
+				56BC878C22EA674200A90F2C /* Starscream.framework */,
 				568A67D11E70C86700F52BD6 /* DFRFoundation.framework */,
 			);
 			name = Frameworks;
