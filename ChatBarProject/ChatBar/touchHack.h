@@ -38,7 +38,7 @@ static const NSTouchBarItemIdentifier stripIdentifier = @"strip";
 
 @interface NSTouchBar ()
 
-+ (void)presentSystemModalFunctionBar:(NSTouchBar *)touchBar systemTrayItemIdentifier:(NSString *)identifier;
++ (void)presentSystemModalTouchBar:(NSTouchBar *)touchBar systemTrayItemIdentifier:(NSTouchBarItemIdentifier)identifier NS_AVAILABLE_MAC(10.14);
 
 @end
 

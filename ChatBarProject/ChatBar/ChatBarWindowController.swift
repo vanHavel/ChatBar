@@ -18,7 +18,7 @@
 
 import Cocoa
 
-@available(OSX 10.12.2, *)
+@available(OSX 10.14, *)
 // this class manages the touchbar displaying chat content
 class ChatBarWindowController: NSWindowController {
     
@@ -55,7 +55,7 @@ class ChatBarWindowController: NSWindowController {
         keyUp!.post(tap: location)
         // get username color
         chatUser.textColor = ChatMessage.nameColor(username: msg.user)
-        chatMessage.textColor = NSColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
+        chatMessage.textColor = NSColor(_colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
         // update touchbar
         chatUser.stringValue = msg.user
         chatMessage.stringValue = msg.content
@@ -68,6 +68,7 @@ class ChatBarWindowController: NSWindowController {
     }
     
     // on chat icon press in command strip
+    @objc
     func chatPressed() {
         // get field content from view
         let vc = self.contentViewController as! ViewController
@@ -76,7 +77,7 @@ class ChatBarWindowController: NSWindowController {
         let channel = vc.chatChannel.stringValue.lowercased()
         // start chat connection and open special touchbar
         startChat(username: username, pw: pw, channel: channel)
-        NSTouchBar.presentSystemModalFunctionBar(chatBar, systemTrayItemIdentifier: "strip")
+        NSTouchBar.presentSystemModalTouchBar(chatBar, systemTrayItemIdentifier: NSTouchBarItem.Identifier(rawValue: "strip"))
     }
     
     // stop chat connection

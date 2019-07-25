@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56330A9322E90DB9006E914F /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56330A9222E90DB9006E914F /* Starscream.framework */; };
 		5678BF861E70223400B3121C /* touchHack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5678BF851E70223400B3121C /* touchHack.m */; };
-		568A67CC1E70A79800F52BD6 /* tw1d.cer in Resources */ = {isa = PBXBuildFile; fileRef = 568A67CA1E70A79800F52BD6 /* tw1d.cer */; };
 		568A67CD1E70A79800F52BD6 /* tw2d.cer in Resources */ = {isa = PBXBuildFile; fileRef = 568A67CB1E70A79800F52BD6 /* tw2d.cer */; };
 		568A67CF1E70BF1600F52BD6 /* Ackknowledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 568A67CE1E70BF1600F52BD6 /* Ackknowledgements.rtf */; };
 		568A67D21E70C86700F52BD6 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568A67D11E70C86700F52BD6 /* DFRFoundation.framework */; };
-		56C02DCD1EB122D50081DDBE /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C02DCC1EB122D50081DDBE /* Starscream.framework */; };
-		56C02DCE1EB122D50081DDBE /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56C02DCC1EB122D50081DDBE /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		56DDAB661E6F1F71000513ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DDAB651E6F1F71000513ED /* AppDelegate.swift */; };
 		56DDAB681E6F1F71000513ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DDAB671E6F1F71000513ED /* ViewController.swift */; };
 		56DDAB6A1E6F1F71000513ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DDAB691E6F1F71000513ED /* Assets.xcassets */; };
@@ -30,7 +28,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				56C02DCE1EB122D50081DDBE /* Starscream.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,14 +35,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		56330A9222E90DB9006E914F /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5678BF841E70223300B3121C /* ChatBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatBar-Bridging-Header.h"; sourceTree = "<group>"; };
 		5678BF851E70223400B3121C /* touchHack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchHack.m; sourceTree = "<group>"; };
 		5678BF871E7022E500B3121C /* touchHack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = touchHack.h; sourceTree = "<group>"; };
-		568A67CA1E70A79800F52BD6 /* tw1d.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = tw1d.cer; path = ChatBar/tw1d.cer; sourceTree = "<group>"; };
 		568A67CB1E70A79800F52BD6 /* tw2d.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = tw2d.cer; path = ChatBar/tw2d.cer; sourceTree = "<group>"; };
 		568A67CE1E70BF1600F52BD6 /* Ackknowledgements.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ackknowledgements.rtf; sourceTree = "<group>"; };
 		568A67D11E70C86700F52BD6 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
-		56C02DCC1EB122D50081DDBE /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Starscream.framework; sourceTree = "<group>"; };
 		56DDAB621E6F1F71000513ED /* ChatBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DDAB651E6F1F71000513ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DDAB671E6F1F71000513ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,8 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56330A9322E90DB9006E914F /* Starscream.framework in Frameworks */,
 				568A67D21E70C86700F52BD6 /* DFRFoundation.framework in Frameworks */,
-				56C02DCD1EB122D50081DDBE /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +69,7 @@
 		568A67D01E70C86700F52BD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56330A9222E90DB9006E914F /* Starscream.framework */,
 				568A67D11E70C86700F52BD6 /* DFRFoundation.framework */,
 			);
 			name = Frameworks;
@@ -81,8 +78,6 @@
 		56DDAB591E6F1F71000513ED = {
 			isa = PBXGroup;
 			children = (
-				56C02DCC1EB122D50081DDBE /* Starscream.framework */,
-				568A67CA1E70A79800F52BD6 /* tw1d.cer */,
 				568A67CB1E70A79800F52BD6 /* tw2d.cer */,
 				56DDAB641E6F1F71000513ED /* ChatBar */,
 				56DDAB631E6F1F71000513ED /* Products */,
@@ -145,7 +140,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Lukas Huwald";
 				TargetAttributes = {
 					56DDAB611E6F1F71000513ED = {
@@ -157,7 +152,7 @@
 			};
 			buildConfigurationList = 56DDAB5D1E6F1F71000513ED /* Build configuration list for PBXProject "ChatBar" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -181,7 +176,6 @@
 				56DDAB6A1E6F1F71000513ED /* Assets.xcassets in Resources */,
 				568A67CD1E70A79800F52BD6 /* tw2d.cer in Resources */,
 				568A67CF1E70BF1600F52BD6 /* Ackknowledgements.rtf in Resources */,
-				568A67CC1E70A79800F52BD6 /* tw1d.cer in Resources */,
 				56DDAB6D1E6F1F71000513ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,15 +219,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -274,15 +276,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -302,7 +312,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -326,7 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChatBar/ChatBar-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -349,7 +360,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = van.Havel.ChatBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChatBar/ChatBar-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

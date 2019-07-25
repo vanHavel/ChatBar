@@ -19,10 +19,10 @@
 import Cocoa
 import Starscream
 
-@available(OSX 10.12.2, *)
+@available(OSX 10.14, *)
 // This class handles the socket connection to twitch IRC
 class ChatConnection: WebSocketDelegate {
-    
+
     // IRC Commands that can be send
     enum ChatCommand {
         case JOIN
@@ -34,6 +34,7 @@ class ChatConnection: WebSocketDelegate {
     
     // store user data and channel name for connection
     var channelName: String?
+
     var username: String?
     var oauth: String?
     
@@ -75,7 +76,7 @@ class ChatConnection: WebSocketDelegate {
     }
     
     // on connect: send PASS/NICK and join channel
-    func websocketDidConnect(socket: WebSocket) {
+    func websocketDidConnect(socket: WebSocketClient) {
         self.send(command: ChatCommand.PASS, msg: self.oauth!)
         self.send(command: ChatCommand.NICK, msg: self.username!)
         self.joinChannel(channel: channelName!)
@@ -83,14 +84,14 @@ class ChatConnection: WebSocketDelegate {
     }
     
     // on disconnect: show error if any occurred
-    func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
+    func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         if error != nil {
             wc.updateStatus(description: "An error occurred while connecting. Try again.")
         }
     }
     
     // on receive: respond to pings, update touchbar
-    func websocketDidReceiveMessage(socket: WebSocket, text: String) {
+    func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
         var lines : [String] = []
         // split into messages
         text.enumerateLines { line, _ in lines.append(line) }
@@ -115,14 +116,14 @@ class ChatConnection: WebSocketDelegate {
     }
     
     // we do not expect data frames and ignore them
-    func websocketDidReceiveData(socket: WebSocket, data: Data) {}
+    func websocketDidReceiveData(socket: WebSocketClient, data: Data) {}
     
     // extract username and content of a PRIVMSG message
     func toMessage(line: String) -> ChatMessage {
         // extract username
         let line = line.substring(from: line.index(line.startIndex, offsetBy: 1))
-        let endUser = line.characters.index(of: "!")!
-        let userName = String(line.characters.prefix(upTo: endUser))
+        let endUser = line.firstIndex(of: "!")!
+        let userName = String(line.prefix(upTo: endUser))
         // extract message
         let startMsgRange = line.range(of: " :")!
         let msgRange = Range(uncheckedBounds: (lower: startMsgRange.upperBound, upper: line.endIndex))

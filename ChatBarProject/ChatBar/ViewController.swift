@@ -19,7 +19,7 @@
 
 import Cocoa
 
-@available(OSX 10.12.2, *)
+@available(OSX 10.14, *)
 // the main view controller. Most of the resposibility is delegated to the window controller, as it has access to the touchbar
 class ViewController: NSViewController {
 

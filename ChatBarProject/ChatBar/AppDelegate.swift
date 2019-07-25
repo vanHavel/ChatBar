@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Run hack to add icon to control strip
-        let wc = NSApplication.shared().windows[0].windowController
+        let wc = NSApplication.shared.windows[0].windowController
         let hack = TouchHack(wc)!
         hack.addToStrip()
         
