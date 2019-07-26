@@ -70,7 +70,10 @@ class ChatConnection: WebSocketDelegate {
         // connect to SSL port
         let target = URL(string: "wss://irc-ws.chat.twitch.tv:443")
         socket = WebSocket(url: target!)
-        socket!.security = SSLSecurity(usePublicKeys: true)
+        socket!.enabledSSLCipherSuites = [
+            TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,
+            TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+        ]
         socket!.delegate = self
         socket!.connect()
     }
@@ -80,7 +83,7 @@ class ChatConnection: WebSocketDelegate {
         self.send(command: ChatCommand.PASS, msg: self.oauth!)
         self.send(command: ChatCommand.NICK, msg: self.username!)
         self.joinChannel(channel: channelName!)
-        wc.updateStatus(description: "OK")
+        //wc.updateStatus(description: "OK")
     }
     
     // on disconnect: show error if any occurred
