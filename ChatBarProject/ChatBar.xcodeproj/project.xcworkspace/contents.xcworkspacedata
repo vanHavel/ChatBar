@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../ChatBar/cert.cer">
+      location = "group:../Carthage/Build/Mac/Starscream.framework">
    </FileRef>
    <FileRef
-      location = "group:../../../../../../Downloads/Starscream-3.1.0/Starscream.xcodeproj">
+      location = "group:../Carthage/Build/Mac/Starscream.framework">
    </FileRef>
    <FileRef
       location = "self:">

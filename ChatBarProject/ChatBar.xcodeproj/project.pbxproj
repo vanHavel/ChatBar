@@ -10,7 +10,8 @@
 		5678BF861E70223400B3121C /* touchHack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5678BF851E70223400B3121C /* touchHack.m */; };
 		568A67CF1E70BF1600F52BD6 /* Ackknowledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 568A67CE1E70BF1600F52BD6 /* Ackknowledgements.rtf */; };
 		568A67D21E70C86700F52BD6 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568A67D11E70C86700F52BD6 /* DFRFoundation.framework */; };
-		56BC878D22EA674200A90F2C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC878C22EA674200A90F2C /* Starscream.framework */; };
+		56BC87F022EBC5ED00A90F2C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC87EF22EBC5EC00A90F2C /* Starscream.framework */; };
+		56BC87F122EBC5ED00A90F2C /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC87EF22EBC5EC00A90F2C /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		56DDAB661E6F1F71000513ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DDAB651E6F1F71000513ED /* AppDelegate.swift */; };
 		56DDAB681E6F1F71000513ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DDAB671E6F1F71000513ED /* ViewController.swift */; };
 		56DDAB6A1E6F1F71000513ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DDAB691E6F1F71000513ED /* Assets.xcassets */; };
@@ -21,12 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		56C02DCF1EB122D50081DDBE /* Embed Frameworks */ = {
+		56BC87F222EBC5ED00A90F2C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				56BC87F122EBC5ED00A90F2C /* Starscream.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +41,7 @@
 		5678BF871E7022E500B3121C /* touchHack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = touchHack.h; sourceTree = "<group>"; };
 		568A67CE1E70BF1600F52BD6 /* Ackknowledgements.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ackknowledgements.rtf; sourceTree = "<group>"; };
 		568A67D11E70C86700F52BD6 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
-		56BC878C22EA674200A90F2C /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BC87EF22EBC5EC00A90F2C /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Starscream.framework; sourceTree = "<group>"; };
 		56DDAB621E6F1F71000513ED /* ChatBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DDAB651E6F1F71000513ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DDAB671E6F1F71000513ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,8 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56BC878D22EA674200A90F2C /* Starscream.framework in Frameworks */,
 				568A67D21E70C86700F52BD6 /* DFRFoundation.framework in Frameworks */,
+				56BC87F022EBC5ED00A90F2C /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +69,6 @@
 		568A67D01E70C86700F52BD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				56BC878C22EA674200A90F2C /* Starscream.framework */,
 				568A67D11E70C86700F52BD6 /* DFRFoundation.framework */,
 			);
 			name = Frameworks;
@@ -76,6 +77,7 @@
 		56DDAB591E6F1F71000513ED = {
 			isa = PBXGroup;
 			children = (
+				56BC87EF22EBC5EC00A90F2C /* Starscream.framework */,
 				56DDAB641E6F1F71000513ED /* ChatBar */,
 				56DDAB631E6F1F71000513ED /* Products */,
 				568A67D01E70C86700F52BD6 /* Frameworks */,
@@ -119,7 +121,7 @@
 				56DDAB5E1E6F1F71000513ED /* Sources */,
 				56DDAB5F1E6F1F71000513ED /* Frameworks */,
 				56DDAB601E6F1F71000513ED /* Resources */,
-				56C02DCF1EB122D50081DDBE /* Embed Frameworks */,
+				56BC87F222EBC5ED00A90F2C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +144,7 @@
 				TargetAttributes = {
 					56DDAB611E6F1F71000513ED = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S4X87ZU373;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -320,15 +323,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = S4X87ZU373;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = ChatBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = van.Havel.ChatBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChatBar/ChatBar-Bridging-Header.h";
@@ -344,15 +348,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = S4X87ZU373;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = ChatBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = van.Havel.ChatBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChatBar/ChatBar-Bridging-Header.h";
