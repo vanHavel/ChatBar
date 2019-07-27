@@ -83,7 +83,7 @@ class ChatConnection: WebSocketDelegate {
         self.send(command: ChatCommand.PASS, msg: self.oauth!)
         self.send(command: ChatCommand.NICK, msg: self.username!)
         self.joinChannel(channel: channelName!)
-        //wc.updateStatus(description: "OK")
+        wc.updateStatus(description: "OK")
     }
     
     // on disconnect: show error if any occurred
