@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Carthage/Build/Mac/Starscream.framework">
-   </FileRef>
-   <FileRef
-      location = "group:../Carthage/Build/Mac/Starscream.framework">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
