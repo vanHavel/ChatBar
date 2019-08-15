@@ -187,75 +187,58 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ChatBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="535" height="242"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="127"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZmQ-2o-7xF">
-                                <rect key="frame" x="200" y="194" width="315" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="name" drawsBackground="YES" id="zGZ-9W-yX4">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-AA-atY">
-                                <rect key="frame" x="200" y="130" width="315" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-AA-atY">
+                                <rect key="frame" x="150" y="74" width="188" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="6k5-gF-c23"/>
+                                </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="channel" drawsBackground="YES" id="GMn-X0-YGi">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAg-Ac-hIu">
-                                <rect key="frame" x="30" y="197" width="114" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Twitch Username:" id="Raf-s4-Ob4">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zu2-gt-Kc3">
-                                <rect key="frame" x="30" y="164" width="80" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="oauth token:" id="VEU-p5-Kgl">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-PL-vzq">
-                                <rect key="frame" x="30" y="132" width="95" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-PL-vzq">
+                                <rect key="frame" x="18" y="79" width="95" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="Td7-dq-RrJ"/>
+                                </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Channel name:" id="XWP-HL-6fc">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-2J-qwx">
-                                <rect key="frame" x="87" y="20" width="389" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-2J-qwx">
+                                <rect key="frame" x="69" y="20" width="206" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="202" id="eOJ-bL-ocD"/>
+                                </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="OK" id="N6o-yZ-AmX">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzb-TH-Qpw">
-                                <rect key="frame" x="30" y="20" width="59" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rzb-TH-Qpw">
+                                <rect key="frame" x="18" y="20" width="47" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="EK4-zy-F23"/>
+                                </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status:" id="OiM-1x-cRe">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LqB-Qs-qSi">
-                                <rect key="frame" x="194" y="65" width="200" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LqB-Qs-qSi">
+                                <rect key="frame" x="275" y="13" width="69" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="S39-Vw-TvC"/>
+                                </constraints>
                                 <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ezm-5G-jxN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -264,28 +247,32 @@
                                     <action selector="pushStop:" target="XfG-lQ-9wD" id="qqI-4p-0yQ"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fsm-t4-mWM">
-                                <rect key="frame" x="200" y="164" width="315" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="oauth" drawsBackground="YES" id="rZi-hN-C8a">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="Rzb-TH-Qpw" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="0Cm-0u-9UK"/>
+                            <constraint firstItem="Rzb-TH-Qpw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pP7-PL-vzq" secondAttribute="bottom" constant="42" id="21J-W5-ceX"/>
+                            <constraint firstAttribute="bottom" secondItem="Rzb-TH-Qpw" secondAttribute="bottom" constant="20" id="Cvu-kv-zzE"/>
+                            <constraint firstAttribute="trailing" secondItem="BwE-AA-atY" secondAttribute="trailing" constant="62" id="DxV-qR-Cxt"/>
+                            <constraint firstItem="BwE-AA-atY" firstAttribute="leading" secondItem="pP7-PL-vzq" secondAttribute="trailing" constant="39" id="Lyc-tM-gaB"/>
+                            <constraint firstItem="pP7-PL-vzq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Rea-xq-pxz"/>
+                            <constraint firstAttribute="trailing" secondItem="LqB-Qs-qSi" secondAttribute="trailing" constant="62" id="WlS-rC-ETd"/>
+                            <constraint firstAttribute="bottom" secondItem="hEo-2J-qwx" secondAttribute="bottom" constant="20" id="fSN-9T-pR1"/>
+                            <constraint firstItem="pP7-PL-vzq" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="31" id="gvv-jq-e6g"/>
+                            <constraint firstItem="BwE-AA-atY" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="31" id="kv2-h6-a4b"/>
+                            <constraint firstItem="hEo-2J-qwx" firstAttribute="leading" secondItem="Rzb-TH-Qpw" secondAttribute="trailing" constant="8" id="uWB-Fz-tn0"/>
+                            <constraint firstAttribute="bottom" secondItem="LqB-Qs-qSi" secondAttribute="bottom" constant="20" id="wyY-yN-0Gf"/>
+                            <constraint firstItem="LqB-Qs-qSi" firstAttribute="leading" secondItem="hEo-2J-qwx" secondAttribute="trailing" constant="8" id="xTC-6G-fIq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ErrorField" destination="hEo-2J-qwx" id="WdB-Ca-oM9"/>
                         <outlet property="chatChannel" destination="BwE-AA-atY" id="eWc-PU-qMU"/>
-                        <outlet property="chatPw" destination="Fsm-t4-mWM" id="fRs-8B-zeS"/>
-                        <outlet property="chatUser" destination="ZmQ-2o-7xF" id="kcO-sc-juM"/>
                         <outlet property="errorField" destination="N6o-yZ-AmX" id="fAl-Jh-vOV"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102.5" y="641"/>
+            <point key="canvasLocation" x="35" y="593.5"/>
         </scene>
     </scenes>
 </document>

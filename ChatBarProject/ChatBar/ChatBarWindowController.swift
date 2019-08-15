@@ -37,11 +37,11 @@ class ChatBarWindowController: NSWindowController {
     @IBOutlet weak var chatBar: NSTouchBar!
     
     // start a chat connection
-    func startChat(username : String, pw : String, channel : String) {
+    func startChat(channel : String) {
         if self.cc == nil {
             self.cc = ChatConnection(wc: self)
         }
-        self.cc!.connect(username: username, pw: pw, channel: channel)
+        self.cc!.connect(channel: channel)
     }
     
     // update touchbar content
@@ -72,11 +72,9 @@ class ChatBarWindowController: NSWindowController {
     func chatPressed() {
         // get field content from view
         let vc = self.contentViewController as! ViewController
-        let username = vc.chatUser.stringValue.lowercased()
-        let pw = vc.chatPw.stringValue
         let channel = vc.chatChannel.stringValue.lowercased()
         // start chat connection and open special touchbar
-        startChat(username: username, pw: pw, channel: channel)
+        startChat(channel: channel)
         NSTouchBar.presentSystemModalTouchBar(chatBar, systemTrayItemIdentifier: NSTouchBarItem.Identifier(rawValue: "strip"))
     }
     

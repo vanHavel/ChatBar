@@ -35,8 +35,6 @@ class ViewController: NSViewController {
         }
     }
     // text fields
-    @IBOutlet weak var chatUser: NSTextField!
-    @IBOutlet weak var chatPw: NSTextField!
     @IBOutlet weak var chatChannel: NSTextField!
     @IBOutlet weak var errorField: NSTextFieldCell!
     

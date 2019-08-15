@@ -28,7 +28,6 @@ class ChatConnection: WebSocketDelegate {
         case JOIN
         case PART
         case NICK
-        case PASS
         case PONG
     }
     
@@ -36,7 +35,6 @@ class ChatConnection: WebSocketDelegate {
     var channelName: String?
 
     var username: String?
-    var oauth: String?
     
     // the socket object
     var socket: WebSocket?
@@ -50,7 +48,7 @@ class ChatConnection: WebSocketDelegate {
     }
     
     // connect to Twitch IRC and join channel
-    func connect(username: String, pw: String, channel: String){
+    func connect(channel: String){
         if socket != nil {
             // already connected, part old channel and join new channel
             self.partChannel()
@@ -59,8 +57,13 @@ class ChatConnection: WebSocketDelegate {
         else {
             // form new connection
             self.channelName = channel
-            self.username = username
-            self.oauth = pw
+            // use justinfanXXXXXXXXXX username which allows login without oauth tokens
+            let digits = "0123456789"
+            self.username = "justinfan"
+            for _ in 1 ... 10 {
+                self.username!.append(digits.randomElement()!)
+            }
+            
             self.open()
         }
     }
@@ -80,7 +83,6 @@ class ChatConnection: WebSocketDelegate {
     
     // on connect: send PASS/NICK and join channel
     func websocketDidConnect(socket: WebSocketClient) {
-        self.send(command: ChatCommand.PASS, msg: self.oauth!)
         self.send(command: ChatCommand.NICK, msg: self.username!)
         self.joinChannel(channel: channelName!)
         wc.updateStatus(description: "OK")
@@ -89,7 +91,7 @@ class ChatConnection: WebSocketDelegate {
     // on disconnect: show error if any occurred
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         if error != nil {
-            wc.updateStatus(description: "An error occurred while connecting. Try again.")
+            wc.updateStatus(description: "Connection error. Try again.")
         }
     }
     
@@ -124,13 +126,13 @@ class ChatConnection: WebSocketDelegate {
     // extract username and content of a PRIVMSG message
     func toMessage(line: String) -> ChatMessage {
         // extract username
-        let line = line.substring(from: line.index(line.startIndex, offsetBy: 1))
+        let line = line[line.index(line.startIndex, offsetBy: 1)...]
         let endUser = line.firstIndex(of: "!")!
         let userName = String(line.prefix(upTo: endUser))
         // extract message
         let startMsgRange = line.range(of: " :")!
         let msgRange = Range(uncheckedBounds: (lower: startMsgRange.upperBound, upper: line.endIndex))
-        let message = line.substring(with: msgRange)
+        let message = String(line[msgRange])
         return ChatMessage(user: userName, content: message)
         
     }
@@ -159,8 +161,6 @@ class ChatConnection: WebSocketDelegate {
     func send(command: ChatCommand, msg: String) {
         var payload : String
         switch command {
-        case .PASS:
-            payload = "PASS "
         case .NICK:
             payload = "NICK "
         case .JOIN:
